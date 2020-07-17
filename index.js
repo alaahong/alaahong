@@ -1,4 +1,3 @@
-require('dotenv').config();
 const Mustache = require('mustache');
 const fs = require('fs');
 
