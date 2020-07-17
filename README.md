@@ -2,7 +2,7 @@
 Hi there, thanks for stopping by, this is **Ian** from China, base in Tianjin.😁
  
 
-- 🔭 I’m currently working on a cross-border banks as the development lead
+- 🔭 I’m currently working on a cross-border bank as the development lead
 - 📫 You can find me on 
   - Blog posts: [ian](http://ianzhang.cn)
 
