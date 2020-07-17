@@ -11,10 +11,9 @@
     </ul>
     <hr>
     <p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/99ef6057df5ca76be0c836077e408d7339fadd2a/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d616c6161686f6e672673686f775f69636f6e733d74727565"><img src="https://camo.githubusercontent.com/99ef6057df5ca76be0c836077e408d7339fadd2a/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d616c6161686f6e672673686f775f69636f6e733d74727565" alt="Ian's github stats" data-canonical-src="https://github-readme-stats.vercel.app/api?username=alaahong&amp;show_icons=true" style="max-width:100%;"></a></p>
-
-    ------------
-    <p align="center">This README file is generated <b>every 3 hours</b>!</br>Last refresh: 7&#x2F;17&#x2F;2020</p>
-    <p align="center"><img src="https://github.com/thmsgbrt/thmsgbrt/workflows/README%20build/badge.svg" /></p>
-
   </article>
 </div>
+
+------------
+<p align="center">This README file is generated <b>every 3 hours</b>!</br>Last refresh: 7&#x2F;17&#x2F;2020</p>
+<p align="center"><img src="https://github.com/alaahong/alaahong/workflows/README%20build/badge.svg" /></p>
