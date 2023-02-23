@@ -2,7 +2,7 @@
 <div class="Box-body px-5 pb-5">
   <article class="markdown-body entry-content container-lg" itemprop="text"><p>Hi there, thanks for stopping by, this is <strong>Ian</strong> from China, base in Tianjin.<g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png">😁</g-emoji></p>
     <ul>
-      <li><g-emoji class="g-emoji" alias="telescope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52d.png">🔭</g-emoji> I’m currently working on a cross-border bank as the Lead, Development</li>
+      <li><g-emoji class="g-emoji" alias="telescope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52d.png">🔭</g-emoji> I’m currently working on a cross-border bank as the development lead</li>
       <li><g-emoji class="g-emoji" alias="mailbox" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4eb.png">📫</g-emoji> You can find me on
         <ul>
           <li>Blog posts: <a href="http://ianzhang.cn" rel="nofollow">ian</a></li>
