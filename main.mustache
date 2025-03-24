@@ -1,5 +1,5 @@
 <div class="Box-body px-5 pb-5">
-  <article class="markdown-body entry-content container-lg" itemprop="text"><p>Hi there, thanks for stopping by, this is <strong>Ian</strong> from China, base in Tianjin.<g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png">😁</g-emoji></p>
+  <article class="markdown-body entry-content container-lg" itemprop="text"><p>Hi there, thanks for stopping by, this is <strong>Ian</strong> from China, base in Tianjin.<g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png">😁</g-emoji></p> 
 <ul>
 <li> I’m currently working on a cross-border bank as the Senior Dev Manager</li>
 <li> Seasoned Expert and Trainer of Digital Transformation as the Selenium & Cucumber official organization member and contributor</li>
@@ -13,10 +13,13 @@
 
 
 [![Ian's GitHub stats](https://github-readme-stats.vercel.app/api?username=alaahong)](https://github.com/anuraghazra/github-readme-stats)
+<br/>
+[![Ian's GitHub stats](https://komarev.com/ghpvc/?username=alaahong)](https://komarev.com/ghpvc/?username=alaahong)
 </div>
 
 
 ------------
 <p align="center">This README file is generated <b>every 3 hours</b>!</br>Last refresh: 3&#x2F;3&#x2F;2025</p>
 <p align="center"><img src="https://github.com/alaahong/alaahong/workflows/README%20build/badge.svg" /></p>
-[![](https://komarev.com/ghpvc/?username=alaahong&style=flat-square)]
+
+
