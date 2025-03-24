@@ -19,4 +19,4 @@
 ------------
 <p align="center">This README file is generated <b>every 3 hours</b>!</br>Last refresh: 3&#x2F;3&#x2F;2025</p>
 <p align="center"><img src="https://github.com/alaahong/alaahong/workflows/README%20build/badge.svg" /></p>
-![](https://komarev.com/ghpvc/?username=your-github-username&style=flat-square)
+[![](https://komarev.com/ghpvc/?username=alaahong&style=flat-square)]
