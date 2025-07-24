@@ -4,7 +4,7 @@
 <li> I’m currently working on a cross-border bank as the Senior Dev Manager</li>
 <li> Seasoned Expert and Trainer of Digital Transformation as the Selenium & Cucumber official organization member and contributor</li>
 <li> Chinese Software Testing Qualifications Board (a.k.a. CSTQB) Member as Working Group of Experts</li>
-<li> Multiple certified roles such as National System Architect, Google Cloud Certified - Professional Cloud Architect, Microsoft Certified: DevOps Engineer Expert, Azure Solutions Architect Expert, Azure Developer Associate, Azure Database Administrator Associate, Certified Scrum Master, AWS Certified Machine Learning Engineer – Associate, AWS Certified AI Practitioner...</li>
+<li> Multiple certified roles such as National System Architect, Google Cloud Certified - Professional Cloud Architect, Microsoft Certified: DevOps Engineer Expert, Azure Solutions Architect Expert, Azure Developer Associate, Azure Database Administrator Associate, Certified Scrum Master, AWS Certified Machine Learning Engineer – Associate, Neo4j Certified Professional...</li>
 <li>You can find me on Blog posts: <a href="http://ianzhang.cn" rel="nofollow">ian</a>          </li>
 <li> Responsible for the development field of the regional-level in-house AI platform now</li>
 </ul>
