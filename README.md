@@ -2,7 +2,8 @@
   <article class="markdown-body entry-content container-lg" itemprop="text"><p>Hi there, thanks for stopping by, this is <strong>Ian</strong> from China, base in Tianjin.<g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png">😁</g-emoji></p> 
 <ul>
 <li> I’m currently working on a cross-border bank as the Senior Dev Manager</li>
-<li> Seasoned Expert and Trainer of Digital Transformation as the Selenium & Cucumber official organization member and contributor</li>
+<li> Seasoned Expert and Trainer of Digital Transformation as the Selenium & Cucumber official organization member and contributor</li>  
+<li> Apache Committer of Apache Fesod , zhangzhe@apache.org  </li>
 <li> Chinese Software Testing Qualifications Board (a.k.a. CSTQB) Member as Working Group of Experts</li>
 <li> Multiple certified roles such as National System Architect, Google Cloud Certified - Professional Cloud Architect, Microsoft Certified: DevOps Engineer Expert, Azure Solutions Architect Expert, Azure Developer Associate, Azure Database Administrator Associate, Certified Scrum Master, AWS Certified Machine Learning Engineer – Associate, Oracle Certified Professional - MySQL Database Administrator, Neo4j Certified Professional...</li>
 <li>You can find me on Blog posts: <a href="http://ianzhang.cn" rel="nofollow">ian</a>          </li>
