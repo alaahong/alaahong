@@ -5,20 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>稚马踏春来 · 六一文艺汇演节目单</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Noto+Sans+SC:wght@400;700;900&family=ZCOOL+KuaiLe&family=Fredoka+One&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
-    background: #f0f4ff;
+    font-family: 'ZCOOL KuaiLe', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background: repeating-linear-gradient(45deg,#ffe0f7,#ffe0f7 18px,#fff0c2 18px,#fff0c2 36px,#d4f5ff 36px,#d4f5ff 54px,#e0ffe8 54px,#e0ffe8 72px);
   }
 
   /* ===== A4 Page Base ===== */
   .page {
     width: 210mm;
     min-height: 297mm;
-    margin: 20px auto;
+    margin: 24px auto;
     position: relative;
     overflow: hidden;
     page-break-after: always;
@@ -26,513 +26,494 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 8px 48px #ff6eb455, 0 2px 16px #7ec8e355;
+    border-radius: 18px;
   }
 
-  /* ===== PAGE 1 – Cover ===== */
+  /* ========== PAGE 1 COVER ========== */
   .page-cover {
-    background: linear-gradient(160deg, #fffbe6 0%, #fff0f8 40%, #e8f4ff 100%);
-    padding: 18mm 16mm;
+    padding: 14mm 14mm 12mm;
+    background:
+      radial-gradient(ellipse at 10% 10%, #ffe066cc 0%, transparent 45%),
+      radial-gradient(ellipse at 90% 8%, #ff9de2cc 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 50%, #c6f7ffaa 0%, transparent 55%),
+      radial-gradient(ellipse at 5% 90%, #b5f5b0bb 0%, transparent 40%),
+      radial-gradient(ellipse at 95% 92%, #ffb347cc 0%, transparent 40%),
+      radial-gradient(ellipse at 50% 95%, #ff6eb4aa 0%, transparent 35%),
+      linear-gradient(135deg, #fff9e6 0%, #ffe0fb 35%, #d6f9ff 65%, #fdffc2 100%);
   }
 
-  /* Decorative corner blobs */
-  .page-cover::before {
-    content: '';
+  /* floating blobs */
+  .blob {
     position: absolute;
-    top: -40px; left: -40px;
-    width: 200px; height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, #ffe48a55, transparent 70%);
+    opacity: 0.55;
+    pointer-events: none;
   }
-  .page-cover::after {
-    content: '';
+  .blob-1 { width:130px;height:130px;top:-30px;left:-30px;background:radial-gradient(circle,#ff6eb4,#ffe066); }
+  .blob-2 { width:110px;height:110px;top:-20px;right:-20px;background:radial-gradient(circle,#7de8ff,#b5f5b0); }
+  .blob-3 { width:90px; height:90px; bottom:-20px;left:20px; background:radial-gradient(circle,#ffe066,#ff9de2); }
+  .blob-4 { width:120px;height:120px;bottom:-30px;right:-20px;background:radial-gradient(circle,#b5f5b0,#7de8ff); }
+  .blob-5 { width:70px; height:70px; top:38%;  left:-18px; background:radial-gradient(circle,#c7b3ff,#ff9de2); }
+  .blob-6 { width:60px; height:60px; top:55%;  right:-15px;background:radial-gradient(circle,#ffb347,#ffe066); }
+
+  /* scattered emoji confetti */
+  .confetti-wrap {
     position: absolute;
-    bottom: -60px; right: -40px;
-    width: 260px; height: 260px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #ffc0eb44, transparent 70%);
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
   }
-
-  .cover-top-deco {
-    font-size: 32px;
-    letter-spacing: 6px;
-    margin-bottom: 8px;
-    text-align: center;
+  .conf {
+    position: absolute;
+    font-size: 22px;
+    opacity: 0.75;
+    animation: spin 8s linear infinite;
   }
+  @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
 
-  .cover-garden-name {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 22pt;
+  .cover-school {
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 19pt;
     font-weight: 900;
-    color: #d4600a;
+    color: #7b00cc;
     text-align: center;
     letter-spacing: 2px;
-    line-height: 1.5;
-    text-shadow: 0 2px 8px #ffe0a055;
-    margin-bottom: 10px;
+    line-height: 1.55;
+    text-shadow: 3px 3px 0 #fff, 5px 5px 0 #ff9de2;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 6px;
   }
 
-  .cover-divider {
-    width: 70%;
-    height: 3px;
-    margin: 12px auto;
-    border-radius: 4px;
-    background: linear-gradient(90deg, transparent, #ffb347, #ff6eb4, #7ec8e3, transparent);
+  .cover-rainbow-bar {
+    width: 75%;
+    height: 6px;
+    margin: 8px auto 10px;
+    border-radius: 6px;
+    background: linear-gradient(90deg,#ff595e,#ffca3a,#6acf4c,#1982c4,#8b5cf6,#ff595e);
+    background-size: 200%;
+    animation: rainbow-shift 3s linear infinite;
+    position: relative; z-index: 2;
   }
+  @keyframes rainbow-shift { from{background-position:0%} to{background-position:200%} }
 
-  .cover-title-wrap {
-    text-align: center;
-    margin: 10px 0 20px;
-  }
-
-  .cover-title-horse {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 36pt;
+  .cover-main-title {
+    font-family: 'ZCOOL KuaiLe', 'Fredoka One', sans-serif;
+    font-size: 44pt;
     font-weight: 900;
-    color: #e6400a;
-    letter-spacing: 4px;
-    line-height: 1.2;
-    text-shadow: 2px 3px 12px #ffb34755;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 1.15;
+    position: relative; z-index: 2;
+    background: linear-gradient(135deg, #ff595e 0%, #ff9d00 25%, #35c759 50%, #007aff 75%, #af52de 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(2px 3px 0 #ffffffcc);
   }
 
-  .cover-title-sub {
-    font-size: 18pt;
-    font-weight: 700;
-    color: #7b3fa0;
-    letter-spacing: 6px;
+  .cover-event-name {
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 20pt;
+    font-weight: 900;
+    color: #ff3b80;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #fff, 4px 4px 0 #ffe066;
+    position: relative; z-index: 2;
     margin-top: 6px;
   }
 
-  .cover-title-program {
-    margin-top: 10px;
+  .cover-badge-wrap {
+    text-align: center;
+    margin: 14px 0 18px;
+    position: relative; z-index: 2;
+  }
+  .cover-badge {
     display: inline-block;
-    font-size: 22pt;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 26pt;
     font-weight: 900;
     color: #fff;
-    background: linear-gradient(90deg, #ff8c42, #ff4fa3);
-    border-radius: 40px;
-    padding: 6px 36px;
-    letter-spacing: 8px;
-    box-shadow: 0 4px 18px #ff8c4244;
+    letter-spacing: 10px;
+    padding: 10px 40px 10px 46px;
+    border-radius: 60px;
+    background: linear-gradient(110deg, #ff595e, #ff9d00, #35c759, #007aff, #af52de);
+    background-size: 300%;
+    animation: rainbow-shift 3s linear infinite;
+    box-shadow: 0 6px 28px #ff595e55, 0 0 0 4px #fffbe6, 0 0 0 8px #ff9de244;
+    text-shadow: 1px 2px 6px #0002;
   }
 
   .cover-info-box {
-    background: rgba(255,255,255,0.72);
-    border: 2px solid #ffd6a5;
-    border-radius: 20px;
-    padding: 22px 36px;
-    width: 88%;
-    margin: 18px auto 0;
-    box-shadow: 0 4px 24px #ffd6a520;
+    background: rgba(255,255,255,0.82);
+    border: 3px solid transparent;
+    border-radius: 22px;
+    padding: 18px 32px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative; z-index: 2;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 3px #ff9de2, 0 6px 32px #ff6eb422;
+    backdrop-filter: blur(4px);
+  }
+  .cover-info-box::before {
+    content:'';
+    position:absolute;
+    inset:-3px;
+    border-radius:24px;
+    background: linear-gradient(135deg,#ff595e,#ffca3a,#6acf4c,#007aff,#af52de);
+    z-index:-1;
   }
 
   .cover-info-row {
     display: flex;
     align-items: center;
-    font-size: 14pt;
-    color: #444;
+    font-size: 13.5pt;
+    color: #333;
     line-height: 2;
-    font-weight: 500;
-  }
-
-  .cover-info-row .icon {
-    font-size: 18pt;
-    margin-right: 10px;
-    flex-shrink: 0;
-  }
-
-  .cover-info-row .label {
-    color: #d4600a;
     font-weight: 700;
-    margin-right: 4px;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+  }
+  .cover-info-row .icon { font-size:18pt; margin-right:10px; flex-shrink:0; }
+  .cover-info-row .label { margin-right:4px;
+    background: linear-gradient(90deg,#ff595e,#af52de);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    font-weight:900;
   }
 
-  .cover-flowers {
-    position: absolute;
-    font-size: 28px;
-  }
-  .cover-flowers.tl { top: 18mm; left: 12mm; }
-  .cover-flowers.tr { top: 18mm; right: 12mm; }
-  .cover-flowers.bl { bottom: 18mm; left: 12mm; }
-  .cover-flowers.br { bottom: 18mm; right: 12mm; }
-
-  .cover-bottom-deco {
+  .cover-footer-emoji {
     text-align: center;
-    font-size: 22px;
-    letter-spacing: 8px;
-    margin-top: 22px;
-    opacity: 0.7;
+    font-size: 26px;
+    letter-spacing: 10px;
+    margin-top: 18px;
+    position: relative; z-index: 2;
   }
 
-  /* ===== PAGE 2 – Program List ===== */
+  /* ========== PAGE 2 LIST ========== */
   .page-list {
-    background: linear-gradient(150deg, #fffdf0 0%, #f0fbff 50%, #fff0fc 100%);
-    padding: 12mm 13mm;
+    padding: 10mm 12mm 10mm;
     justify-content: flex-start;
+    background:
+      radial-gradient(ellipse at 15% 5%,  #ffe066bb 0%, transparent 38%),
+      radial-gradient(ellipse at 85% 5%,  #ff9de2bb 0%, transparent 38%),
+      radial-gradient(ellipse at 5%  50%, #b5f5b0bb 0%, transparent 30%),
+      radial-gradient(ellipse at 95% 50%, #7de8ffbb 0%, transparent 30%),
+      radial-gradient(ellipse at 15% 95%, #c7b3ffbb 0%, transparent 38%),
+      radial-gradient(ellipse at 85% 95%, #ffb347bb 0%, transparent 38%),
+      radial-gradient(ellipse at 50% 50%, #fff8f0   0%, #f5fffb  100%);
   }
 
-  .page-list::before {
-    content: '';
-    position: absolute;
-    top: -50px; right: -50px;
-    width: 220px; height: 220px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #ffe48a44, transparent 70%);
+  /* polka dot overlay */
+  .page-list::after {
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:
+      radial-gradient(circle, #ff6eb433 3px, transparent 3px),
+      radial-gradient(circle, #ffe06633 3px, transparent 3px);
+    background-size: 36px 36px, 36px 36px;
+    background-position: 0 0, 18px 18px;
+    pointer-events:none;
+    z-index:0;
   }
 
-  .list-header {
-    text-align: center;
-    margin-bottom: 8px;
-  }
+  .list-content { position:relative; z-index:1; width:100%; }
 
-  .list-header-title {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 20pt;
+  .list-header { text-align:center; margin-bottom:4px; }
+
+  .list-main-title {
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 22pt;
     font-weight: 900;
-    color: #c94000;
     letter-spacing: 4px;
-    text-shadow: 1px 2px 8px #ffb34744;
+    background: linear-gradient(135deg,#ff595e,#ff9d00,#35c759,#007aff,#af52de);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(1px 2px 0 #fff8);
   }
-
-  .list-header-sub {
-    font-size: 10pt;
-    color: #888;
+  .list-sub {
+    font-size: 9.5pt;
+    color: #b06aaa;
     letter-spacing: 3px;
-    margin-top: 2px;
+    margin-top: 1px;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
   }
 
-  .list-divider {
-    width: 80%;
-    height: 3px;
-    margin: 7px auto 10px;
-    border-radius: 4px;
-    background: linear-gradient(90deg, transparent, #ffb347, #ff6eb4, #7ec8e3, transparent);
+  .rainbow-divider {
+    width: 85%;
+    height: 5px;
+    margin: 6px auto 8px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#ff595e,#ffca3a,#6acf4c,#1982c4,#8b5cf6,#ff595e);
+    background-size: 200%;
+    animation: rainbow-shift 3s linear infinite;
   }
 
-  /* Chapter heading */
+  /* Chapter */
   .chapter {
     display: flex;
     align-items: center;
-    margin: 9px 0 5px;
-    gap: 8px;
+    margin: 8px 0 4px;
+    gap: 7px;
   }
-
   .chapter-badge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: linear-gradient(90deg, #ff8c42, #ff4fa3);
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 10pt;
+    font-weight: 900;
     color: #fff;
-    font-size: 9.5pt;
-    font-weight: 700;
-    padding: 3px 14px 3px 10px;
+    padding: 4px 16px 4px 12px;
     border-radius: 30px;
     white-space: nowrap;
-    box-shadow: 0 2px 8px #ff8c4233;
     letter-spacing: 1px;
+    box-shadow: 0 3px 10px #0002;
+    text-shadow: 0 1px 3px #0002;
   }
+  .ch1 { background: linear-gradient(90deg, #ff595e, #ff9d00); }
+  .ch2 { background: linear-gradient(90deg, #35c759, #007aff); }
+  .ch3 { background: linear-gradient(90deg, #af52de, #ff3b80); }
 
   .chapter-line {
     flex: 1;
-    height: 1.5px;
-    background: linear-gradient(90deg, #ffb34766, transparent);
+    height: 2px;
     border-radius: 2px;
   }
+  .cl1 { background: linear-gradient(90deg,#ff9d0066,transparent); }
+  .cl2 { background: linear-gradient(90deg,#007aff66,transparent); }
+  .cl3 { background: linear-gradient(90deg,#af52de66,transparent); }
 
-  /* Program item */
+  /* Program item row colors cycling */
   .prog-item {
     display: flex;
     align-items: baseline;
-    padding: 3.5px 8px 3.5px 6px;
-    border-radius: 8px;
-    margin: 1.5px 0;
-    transition: background 0.2s;
-    gap: 0;
+    padding: 3px 10px 3px 8px;
+    border-radius: 10px;
+    margin: 2px 0;
     font-size: 10.5pt;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.65;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
   }
-
-  .prog-item:nth-child(odd) {
-    background: rgba(255,200,100,0.08);
-  }
+  .prog-item:nth-child(6n+1) { background: #fff0fb; }
+  .prog-item:nth-child(6n+2) { background: #fffbe6; }
+  .prog-item:nth-child(6n+3) { background: #edfff4; }
+  .prog-item:nth-child(6n+4) { background: #e8f7ff; }
+  .prog-item:nth-child(6n+5) { background: #f3eeff; }
+  .prog-item:nth-child(6n+0) { background: #fff4e6; }
 
   .prog-num {
-    min-width: 26px;
-    font-weight: 700;
-    color: #e05a00;
-    font-size: 10pt;
-    flex-shrink: 0;
-  }
-
-  .prog-type {
-    color: #888;
-    font-size: 9.5pt;
-    margin-right: 2px;
-    flex-shrink: 0;
-  }
-
-  .prog-dash {
-    color: #ccc;
-    margin: 0 4px;
-    flex-shrink: 0;
-  }
-
-  .prog-name {
-    color: #222;
+    min-width: 28px;
+    font-weight: 900;
     font-size: 10.5pt;
+    flex-shrink: 0;
   }
+  /* cycle num colors */
+  .prog-item:nth-child(6n+1) .prog-num { color:#ff3b80; }
+  .prog-item:nth-child(6n+2) .prog-num { color:#ff9500; }
+  .prog-item:nth-child(6n+3) .prog-num { color:#34c759; }
+  .prog-item:nth-child(6n+4) .prog-num { color:#007aff; }
+  .prog-item:nth-child(6n+5) .prog-num { color:#af52de; }
+  .prog-item:nth-child(6n+0) .prog-num { color:#ff6b35; }
 
-  /* Bold highlight items */
-  .prog-item.highlight .prog-num,
-  .prog-item.highlight .prog-type,
-  .prog-item.highlight .prog-name {
-    font-weight: 900 !important;
-    color: #b5000e !important;
-    font-size: 11pt;
-  }
+  .prog-type { color:#888; font-size:9.5pt; margin-right:2px; flex-shrink:0; }
+  .prog-dash { color:#ccc; margin:0 4px; flex-shrink:0; }
+  .prog-name { color:#222; font-size:10.5pt; }
+
+  /* Highlight items */
   .prog-item.highlight {
-    background: linear-gradient(90deg, #fff3cd55, #ffe4e155) !important;
-    border-left: 3px solid #ff4a4a;
-    padding-left: 5px;
+    background: linear-gradient(90deg,#fff3b0,#ffccf9,#c8f7c5) !important;
+    border-left: 4px solid;
+    padding-left: 6px;
+    border-image: linear-gradient(180deg,#ff595e,#af52de) 1;
   }
-  .prog-item.highlight .prog-dash {
-    color: #ff4a4a;
-  }
+  .prog-item.highlight .prog-num { color:#c00 !important; font-size:11.5pt !important; }
+  .prog-item.highlight .prog-type { color:#aa0077 !important; font-weight:900; font-size:10.5pt !important; }
+  .prog-item.highlight .prog-name { color:#900090 !important; font-weight:900; font-size:11pt !important; }
+  .prog-item.highlight .prog-dash { color:#ff3b80; }
 
   .list-footer {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 9pt;
-    color: #aaa;
-    letter-spacing: 2px;
+    text-align:center;
+    margin-top:10px;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 10pt;
+    font-weight: 900;
+    letter-spacing:2px;
+    background: linear-gradient(90deg,#ff595e,#ff9d00,#35c759,#007aff,#af52de);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
   }
-
-  .list-footer-deco {
-    font-size: 16px;
-    letter-spacing: 6px;
-  }
+  .list-footer-emoji { font-size:18px; letter-spacing:8px; margin-bottom:3px; }
 
   /* ===== Print ===== */
   @media print {
-    body { background: white; }
-    .page { margin: 0; box-shadow: none; }
-    .page-cover { page-break-after: always; }
+    body { background: white !important; }
+    .page { margin:0; box-shadow:none; border-radius:0; }
+    .page-cover { page-break-after:always; }
+    @keyframes rainbow-shift {}
+    @keyframes spin {}
   }
 </style>
 </head>
 <body>
 
-<!-- ============ PAGE 1: COVER ============ -->
+<!-- ======== PAGE 1: COVER ======== -->
 <div class="page page-cover">
 
-  <span class="cover-flowers tl">🌸🌼</span>
-  <span class="cover-flowers tr">🌼🌸</span>
-  <span class="cover-flowers bl">🦋🌷</span>
-  <span class="cover-flowers br">🌷🦋</span>
+  <!-- blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="blob blob-5"></div>
+  <div class="blob blob-6"></div>
 
-  <div class="cover-top-deco">🎠 🐴 🎠</div>
-
-  <div class="cover-garden-name">
-    李七庄街第三幼儿园新都分园
+  <!-- confetti -->
+  <div class="confetti-wrap">
+    <span class="conf" style="top:6%;left:8%;animation-duration:9s">🌸</span>
+    <span class="conf" style="top:4%;left:55%;animation-duration:7s;animation-direction:reverse">⭐</span>
+    <span class="conf" style="top:8%;right:10%;animation-duration:11s">🎈</span>
+    <span class="conf" style="top:22%;left:3%;animation-duration:6s;animation-direction:reverse">🌈</span>
+    <span class="conf" style="top:20%;right:4%;animation-duration:8s">🎀</span>
+    <span class="conf" style="top:72%;left:4%;animation-duration:10s">🦄</span>
+    <span class="conf" style="top:75%;right:5%;animation-duration:7.5s;animation-direction:reverse">🌻</span>
+    <span class="conf" style="bottom:8%;left:30%;animation-duration:9s">🎊</span>
+    <span class="conf" style="bottom:6%;right:22%;animation-duration:6.5s">🎶</span>
+    <span class="conf" style="top:45%;right:3%;animation-duration:12s;font-size:16px">✨</span>
+    <span class="conf" style="top:48%;left:2%;animation-duration:10s;font-size:16px;animation-direction:reverse">💫</span>
   </div>
 
-  <div class="cover-divider"></div>
+  <div class="cover-school">🎠 李七庄街第三幼儿园新都分园 🎠</div>
 
-  <div class="cover-title-wrap">
-    <div class="cover-title-horse">"稚马踏春来"</div>
-    <div class="cover-title-sub">六一文艺汇演</div>
-    <div style="margin-top:14px;">
-      <span class="cover-title-program">节 目 单</span>
-    </div>
+  <div class="cover-rainbow-bar"></div>
+
+  <div class="cover-main-title">"稚马踏春来"</div>
+  <div class="cover-event-name">🎪 六一文艺汇演 🎪</div>
+
+  <div class="cover-badge-wrap">
+    <span class="cover-badge">节 目 单</span>
   </div>
-
-  <div class="cover-divider"></div>
 
   <div class="cover-info-box">
     <div class="cover-info-row">
       <span class="icon">⏰</span>
       <span class="label">时间：</span>
-      <span>2026年5月30日（星期六）&nbsp;&nbsp;上午 9:00 - 12:00</span>
+      <span>2026年5月30日（星期六）&nbsp; 上午 9:00 - 12:00</span>
     </div>
-    <div class="cover-info-row" style="margin-top:6px;">
+    <div class="cover-info-row" style="margin-top:4px;">
       <span class="icon">📍</span>
       <span class="label">地点：</span>
       <span>天津市海河剧院</span>
     </div>
   </div>
 
-  <div class="cover-bottom-deco">🌟 ✨ 🎶 ✨ 🌟</div>
+  <div class="cover-footer-emoji">🌟 🎈 🐴 🎈 🌟</div>
 
 </div>
 
 
-<!-- ============ PAGE 2: PROGRAM LIST ============ -->
+<!-- ======== PAGE 2: PROGRAM LIST ======== -->
 <div class="page page-list">
+<div class="list-content">
 
   <div class="list-header">
-    <div class="list-header-title">🎪 演出节目单 🎪</div>
-    <div class="list-header-sub">稚马踏春来 · 六一文艺汇演 · 2026</div>
+    <div class="list-main-title">🎪 演出节目单 🎪</div>
+    <div class="list-sub">稚马踏春来 · 六一文艺汇演 · 2026 🐴</div>
   </div>
-  <div class="list-divider"></div>
+  <div class="rainbow-divider"></div>
 
-  <!-- Chapter 1 -->
+  <!-- ── Chapter 1 ── -->
   <div class="chapter">
-    <div class="chapter-badge">🌸 第一篇章｜稚马初鸣 · 初见欢</div>
-    <div class="chapter-line"></div>
+    <div class="chapter-badge ch1">🌸 第一篇章｜稚马初鸣 · 初见欢</div>
+    <div class="chapter-line cl1"></div>
   </div>
 
   <div class="prog-item highlight">
-    <span class="prog-num">1.</span>
-    <span class="prog-type">&nbsp;开场舞</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《孩子的天空》</span>
+    <span class="prog-num">1.</span><span class="prog-type">&nbsp;开场舞</span><span class="prog-dash">——</span><span class="prog-name">《孩子的天空》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">2.</span>
-    <span class="prog-type">&nbsp;朗诵</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《说马》</span>
+    <span class="prog-num">2.</span><span class="prog-type">&nbsp;朗诵</span><span class="prog-dash">——</span><span class="prog-name">《说马》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">3.</span>
-    <span class="prog-type">&nbsp;舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《小小美人鱼》</span>
+    <span class="prog-num">3.</span><span class="prog-type">&nbsp;舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《小小美人鱼》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">4.</span>
-    <span class="prog-type">&nbsp;情景舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《快乐的小泥巴》</span>
+    <span class="prog-num">4.</span><span class="prog-type">&nbsp;情景舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《快乐的小泥巴》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">5.</span>
-    <span class="prog-type">&nbsp;打击乐合奏</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《布谷鸣 · 马蹄乐》</span>
+    <span class="prog-num">5.</span><span class="prog-type">&nbsp;打击乐合奏</span><span class="prog-dash">——</span><span class="prog-name">《布谷鸣 · 马蹄乐》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">6.</span>
-    <span class="prog-type">&nbsp;舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《动感小黄人》</span>
+    <span class="prog-num">6.</span><span class="prog-type">&nbsp;舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《动感小黄人》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">7.</span>
-    <span class="prog-type">&nbsp;歌伴舞</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《小池》</span>
+    <span class="prog-num">7.</span><span class="prog-type">&nbsp;歌伴舞</span><span class="prog-dash">——</span><span class="prog-name">《小池》</span>
   </div>
 
-  <!-- Chapter 2 -->
+  <!-- ── Chapter 2 ── -->
   <div class="chapter">
-    <div class="chapter-badge">🌱 第二篇章｜相马育德 · 励成长</div>
-    <div class="chapter-line"></div>
+    <div class="chapter-badge ch2">🌱 第二篇章｜相马育德 · 励成长</div>
+    <div class="chapter-line cl2"></div>
   </div>
 
   <div class="prog-item">
-    <span class="prog-num">8.</span>
-    <span class="prog-type">&nbsp;儿童剧</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《小蜜蜂的油菜花田》</span>
+    <span class="prog-num">8.</span><span class="prog-type">&nbsp;儿童剧</span><span class="prog-dash">——</span><span class="prog-name">《小蜜蜂的油菜花田》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">9.</span>
-    <span class="prog-type">&nbsp;教师舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《立春》</span>
+    <span class="prog-num">9.</span><span class="prog-type">&nbsp;教师舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《立春》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">10.</span>
-    <span class="prog-type">&nbsp;情景舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《小小芝麻官》</span>
+    <span class="prog-num">10.</span><span class="prog-type">&nbsp;情景舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《小小芝麻官》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">11.</span>
-    <span class="prog-type">&nbsp;舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《小萌马》</span>
+    <span class="prog-num">11.</span><span class="prog-type">&nbsp;舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《小萌马》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">12.</span>
-    <span class="prog-type">&nbsp;啦啦操</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《Boom》</span>
+    <span class="prog-num">12.</span><span class="prog-type">&nbsp;啦啦操</span><span class="prog-dash">——</span><span class="prog-name">《Boom》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">13.</span>
-    <span class="prog-type">&nbsp;合唱</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《时代儿歌联唱》</span>
+    <span class="prog-num">13.</span><span class="prog-type">&nbsp;合唱</span><span class="prog-dash">——</span><span class="prog-name">《时代儿歌联唱》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">14.</span>
-    <span class="prog-type">&nbsp;舞台剧</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《崖上的波妞》</span>
+    <span class="prog-num">14.</span><span class="prog-type">&nbsp;舞台剧</span><span class="prog-dash">——</span><span class="prog-name">《崖上的波妞》</span>
   </div>
 
-  <!-- Chapter 3 -->
+  <!-- ── Chapter 3 ── -->
   <div class="chapter">
-    <div class="chapter-badge">☀️ 第三篇章｜骏驹启程 · 赴新程</div>
-    <div class="chapter-line"></div>
+    <div class="chapter-badge ch3">☀️ 第三篇章｜骏驹启程 · 赴新程</div>
+    <div class="chapter-line cl3"></div>
   </div>
 
   <div class="prog-item">
-    <span class="prog-num">15.</span>
-    <span class="prog-type">&nbsp;舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《棒球少年》</span>
+    <span class="prog-num">15.</span><span class="prog-type">&nbsp;舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《棒球少年》</span>
   </div>
   <div class="prog-item highlight">
-    <span class="prog-num">16.</span>
-    <span class="prog-type">&nbsp;经典诵读</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《非遗里的中国》</span>
+    <span class="prog-num">16.</span><span class="prog-type">&nbsp;经典诵读</span><span class="prog-dash">——</span><span class="prog-name">《非遗里的中国》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">17.</span>
-    <span class="prog-type">&nbsp;舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《快乐小马》</span>
+    <span class="prog-num">17.</span><span class="prog-type">&nbsp;舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《快乐小马》</span>
   </div>
   <div class="prog-item highlight">
-    <span class="prog-num">18.</span>
-    <span class="prog-type">&nbsp;师幼联唱</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《不要慌太阳下山有月光》</span>
+    <span class="prog-num">18.</span><span class="prog-type">&nbsp;师幼联唱</span><span class="prog-dash">——</span><span class="prog-name">《不要慌太阳下山有月光》</span>
   </div>
   <div class="prog-item highlight">
-    <span class="prog-num">19.</span>
-    <span class="prog-type">&nbsp;创意舞蹈</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《有AI的时光》</span>
+    <span class="prog-num">19.</span><span class="prog-type">&nbsp;创意舞蹈</span><span class="prog-dash">——</span><span class="prog-name">《有AI的时光》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">20.</span>
-    <span class="prog-type">&nbsp;非洲鼓合唱</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《像你这样的朋友》</span>
+    <span class="prog-num">20.</span><span class="prog-type">&nbsp;非洲鼓合唱</span><span class="prog-dash">——</span><span class="prog-name">《像你这样的朋友》</span>
   </div>
   <div class="prog-item">
-    <span class="prog-num">21.</span>
-    <span class="prog-type">&nbsp;音乐剧</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《逐梦》</span>
+    <span class="prog-num">21.</span><span class="prog-type">&nbsp;音乐剧</span><span class="prog-dash">——</span><span class="prog-name">《逐梦》</span>
   </div>
   <div class="prog-item highlight">
-    <span class="prog-num">22.</span>
-    <span class="prog-type">&nbsp;集体大合唱</span>
-    <span class="prog-dash">——</span>
-    <span class="prog-name">《把未来点亮》</span>
+    <span class="prog-num">22.</span><span class="prog-type">&nbsp;集体大合唱</span><span class="prog-dash">——</span><span class="prog-name">《把未来点亮》</span>
   </div>
 
   <div class="list-footer">
-    <div class="list-footer-deco">🌟 🎈 🎊 🎈 🌟</div>
-    <div style="margin-top:4px;">祝小朋友们六一儿童节快乐！</div>
+    <div class="list-footer-emoji">🌈 🎊 🎉 🎈 🌟 🎈 🎉 🎊 🌈</div>
+    <div>祝小朋友们六一儿童节快乐！🐴✨</div>
   </div>
 
+</div>
 </div>
 
 </body>
