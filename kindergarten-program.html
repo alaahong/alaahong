@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>稚马踏春来 · 六一文艺汇演节目单</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background: #f0f4ff;
+  }
+
+  /* ===== A4 Page Base ===== */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ===== PAGE 1 – Cover ===== */
+  .page-cover {
+    background: linear-gradient(160deg, #fffbe6 0%, #fff0f8 40%, #e8f4ff 100%);
+    padding: 18mm 16mm;
+  }
+
+  /* Decorative corner blobs */
+  .page-cover::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffe48a55, transparent 70%);
+  }
+  .page-cover::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; right: -40px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffc0eb44, transparent 70%);
+  }
+
+  .cover-top-deco {
+    font-size: 32px;
+    letter-spacing: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .cover-garden-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22pt;
+    font-weight: 900;
+    color: #d4600a;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-shadow: 0 2px 8px #ffe0a055;
+    margin-bottom: 10px;
+  }
+
+  .cover-divider {
+    width: 70%;
+    height: 3px;
+    margin: 12px auto;
+    border-radius: 4px;
+    background: linear-gradient(90deg, transparent, #ffb347, #ff6eb4, #7ec8e3, transparent);
+  }
+
+  .cover-title-wrap {
+    text-align: center;
+    margin: 10px 0 20px;
+  }
+
+  .cover-title-horse {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 36pt;
+    font-weight: 900;
+    color: #e6400a;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    text-shadow: 2px 3px 12px #ffb34755;
+  }
+
+  .cover-title-sub {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #7b3fa0;
+    letter-spacing: 6px;
+    margin-top: 6px;
+  }
+
+  .cover-title-program {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 22pt;
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c42, #ff4fa3);
+    border-radius: 40px;
+    padding: 6px 36px;
+    letter-spacing: 8px;
+    box-shadow: 0 4px 18px #ff8c4244;
+  }
+
+  .cover-info-box {
+    background: rgba(255,255,255,0.72);
+    border: 2px solid #ffd6a5;
+    border-radius: 20px;
+    padding: 22px 36px;
+    width: 88%;
+    margin: 18px auto 0;
+    box-shadow: 0 4px 24px #ffd6a520;
+  }
+
+  .cover-info-row {
+    display: flex;
+    align-items: center;
+    font-size: 14pt;
+    color: #444;
+    line-height: 2;
+    font-weight: 500;
+  }
+
+  .cover-info-row .icon {
+    font-size: 18pt;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  .cover-info-row .label {
+    color: #d4600a;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  .cover-flowers {
+    position: absolute;
+    font-size: 28px;
+  }
+  .cover-flowers.tl { top: 18mm; left: 12mm; }
+  .cover-flowers.tr { top: 18mm; right: 12mm; }
+  .cover-flowers.bl { bottom: 18mm; left: 12mm; }
+  .cover-flowers.br { bottom: 18mm; right: 12mm; }
+
+  .cover-bottom-deco {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 8px;
+    margin-top: 22px;
+    opacity: 0.7;
+  }
+
+  /* ===== PAGE 2 – Program List ===== */
+  .page-list {
+    background: linear-gradient(150deg, #fffdf0 0%, #f0fbff 50%, #fff0fc 100%);
+    padding: 12mm 13mm;
+    justify-content: flex-start;
+  }
+
+  .page-list::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffe48a44, transparent 70%);
+  }
+
+  .list-header {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .list-header-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20pt;
+    font-weight: 900;
+    color: #c94000;
+    letter-spacing: 4px;
+    text-shadow: 1px 2px 8px #ffb34744;
+  }
+
+  .list-header-sub {
+    font-size: 10pt;
+    color: #888;
+    letter-spacing: 3px;
+    margin-top: 2px;
+  }
+
+  .list-divider {
+    width: 80%;
+    height: 3px;
+    margin: 7px auto 10px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, transparent, #ffb347, #ff6eb4, #7ec8e3, transparent);
+  }
+
+  /* Chapter heading */
+  .chapter {
+    display: flex;
+    align-items: center;
+    margin: 9px 0 5px;
+    gap: 8px;
+  }
+
+  .chapter-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(90deg, #ff8c42, #ff4fa3);
+    color: #fff;
+    font-size: 9.5pt;
+    font-weight: 700;
+    padding: 3px 14px 3px 10px;
+    border-radius: 30px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px #ff8c4233;
+    letter-spacing: 1px;
+  }
+
+  .chapter-line {
+    flex: 1;
+    height: 1.5px;
+    background: linear-gradient(90deg, #ffb34766, transparent);
+    border-radius: 2px;
+  }
+
+  /* Program item */
+  .prog-item {
+    display: flex;
+    align-items: baseline;
+    padding: 3.5px 8px 3.5px 6px;
+    border-radius: 8px;
+    margin: 1.5px 0;
+    transition: background 0.2s;
+    gap: 0;
+    font-size: 10.5pt;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .prog-item:nth-child(odd) {
+    background: rgba(255,200,100,0.08);
+  }
+
+  .prog-num {
+    min-width: 26px;
+    font-weight: 700;
+    color: #e05a00;
+    font-size: 10pt;
+    flex-shrink: 0;
+  }
+
+  .prog-type {
+    color: #888;
+    font-size: 9.5pt;
+    margin-right: 2px;
+    flex-shrink: 0;
+  }
+
+  .prog-dash {
+    color: #ccc;
+    margin: 0 4px;
+    flex-shrink: 0;
+  }
+
+  .prog-name {
+    color: #222;
+    font-size: 10.5pt;
+  }
+
+  /* Bold highlight items */
+  .prog-item.highlight .prog-num,
+  .prog-item.highlight .prog-type,
+  .prog-item.highlight .prog-name {
+    font-weight: 900 !important;
+    color: #b5000e !important;
+    font-size: 11pt;
+  }
+  .prog-item.highlight {
+    background: linear-gradient(90deg, #fff3cd55, #ffe4e155) !important;
+    border-left: 3px solid #ff4a4a;
+    padding-left: 5px;
+  }
+  .prog-item.highlight .prog-dash {
+    color: #ff4a4a;
+  }
+
+  .list-footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 9pt;
+    color: #aaa;
+    letter-spacing: 2px;
+  }
+
+  .list-footer-deco {
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .page-cover { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1: COVER ============ -->
+<div class="page page-cover">
+
+  <span class="cover-flowers tl">🌸🌼</span>
+  <span class="cover-flowers tr">🌼🌸</span>
+  <span class="cover-flowers bl">🦋🌷</span>
+  <span class="cover-flowers br">🌷🦋</span>
+
+  <div class="cover-top-deco">🎠 🐴 🎠</div>
+
+  <div class="cover-garden-name">
+    李七庄街第三幼儿园新都分园
+  </div>
+
+  <div class="cover-divider"></div>
+
+  <div class="cover-title-wrap">
+    <div class="cover-title-horse">"稚马踏春来"</div>
+    <div class="cover-title-sub">六一文艺汇演</div>
+    <div style="margin-top:14px;">
+      <span class="cover-title-program">节 目 单</span>
+    </div>
+  </div>
+
+  <div class="cover-divider"></div>
+
+  <div class="cover-info-box">
+    <div class="cover-info-row">
+      <span class="icon">⏰</span>
+      <span class="label">时间：</span>
+      <span>2026年5月30日（星期六）&nbsp;&nbsp;上午 9:00 - 12:00</span>
+    </div>
+    <div class="cover-info-row" style="margin-top:6px;">
+      <span class="icon">📍</span>
+      <span class="label">地点：</span>
+      <span>天津市海河剧院</span>
+    </div>
+  </div>
+
+  <div class="cover-bottom-deco">🌟 ✨ 🎶 ✨ 🌟</div>
+
+</div>
+
+
+<!-- ============ PAGE 2: PROGRAM LIST ============ -->
+<div class="page page-list">
+
+  <div class="list-header">
+    <div class="list-header-title">🎪 演出节目单 🎪</div>
+    <div class="list-header-sub">稚马踏春来 · 六一文艺汇演 · 2026</div>
+  </div>
+  <div class="list-divider"></div>
+
+  <!-- Chapter 1 -->
+  <div class="chapter">
+    <div class="chapter-badge">🌸 第一篇章｜稚马初鸣 · 初见欢</div>
+    <div class="chapter-line"></div>
+  </div>
+
+  <div class="prog-item highlight">
+    <span class="prog-num">1.</span>
+    <span class="prog-type">&nbsp;开场舞</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《孩子的天空》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">2.</span>
+    <span class="prog-type">&nbsp;朗诵</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《说马》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">3.</span>
+    <span class="prog-type">&nbsp;舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《小小美人鱼》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">4.</span>
+    <span class="prog-type">&nbsp;情景舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《快乐的小泥巴》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">5.</span>
+    <span class="prog-type">&nbsp;打击乐合奏</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《布谷鸣 · 马蹄乐》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">6.</span>
+    <span class="prog-type">&nbsp;舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《动感小黄人》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">7.</span>
+    <span class="prog-type">&nbsp;歌伴舞</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《小池》</span>
+  </div>
+
+  <!-- Chapter 2 -->
+  <div class="chapter">
+    <div class="chapter-badge">🌱 第二篇章｜相马育德 · 励成长</div>
+    <div class="chapter-line"></div>
+  </div>
+
+  <div class="prog-item">
+    <span class="prog-num">8.</span>
+    <span class="prog-type">&nbsp;儿童剧</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《小蜜蜂的油菜花田》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">9.</span>
+    <span class="prog-type">&nbsp;教师舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《立春》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">10.</span>
+    <span class="prog-type">&nbsp;情景舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《小小芝麻官》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">11.</span>
+    <span class="prog-type">&nbsp;舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《小萌马》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">12.</span>
+    <span class="prog-type">&nbsp;啦啦操</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《Boom》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">13.</span>
+    <span class="prog-type">&nbsp;合唱</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《时代儿歌联唱》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">14.</span>
+    <span class="prog-type">&nbsp;舞台剧</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《崖上的波妞》</span>
+  </div>
+
+  <!-- Chapter 3 -->
+  <div class="chapter">
+    <div class="chapter-badge">☀️ 第三篇章｜骏驹启程 · 赴新程</div>
+    <div class="chapter-line"></div>
+  </div>
+
+  <div class="prog-item">
+    <span class="prog-num">15.</span>
+    <span class="prog-type">&nbsp;舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《棒球少年》</span>
+  </div>
+  <div class="prog-item highlight">
+    <span class="prog-num">16.</span>
+    <span class="prog-type">&nbsp;经典诵读</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《非遗里的中国》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">17.</span>
+    <span class="prog-type">&nbsp;舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《快乐小马》</span>
+  </div>
+  <div class="prog-item highlight">
+    <span class="prog-num">18.</span>
+    <span class="prog-type">&nbsp;师幼联唱</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《不要慌太阳下山有月光》</span>
+  </div>
+  <div class="prog-item highlight">
+    <span class="prog-num">19.</span>
+    <span class="prog-type">&nbsp;创意舞蹈</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《有AI的时光》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">20.</span>
+    <span class="prog-type">&nbsp;非洲鼓合唱</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《像你这样的朋友》</span>
+  </div>
+  <div class="prog-item">
+    <span class="prog-num">21.</span>
+    <span class="prog-type">&nbsp;音乐剧</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《逐梦》</span>
+  </div>
+  <div class="prog-item highlight">
+    <span class="prog-num">22.</span>
+    <span class="prog-type">&nbsp;集体大合唱</span>
+    <span class="prog-dash">——</span>
+    <span class="prog-name">《把未来点亮》</span>
+  </div>
+
+  <div class="list-footer">
+    <div class="list-footer-deco">🌟 🎈 🎊 🎈 🌟</div>
+    <div style="margin-top:4px;">祝小朋友们六一儿童节快乐！</div>
+  </div>
+
+</div>
+
+</body>
+</html>
